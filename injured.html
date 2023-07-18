@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title></title>
+</head>
+
+<body>
+
+    <!-- نوار بالا -->
+    <div id="topbar"></div>
+
+
+    <!-- سطر و ستون برای نمایش ایتم های اطلاعات شهید -->
+    <div class="container-fluid text-center bg-dark">
+        <!-- عنوان نام و تاریخ شهادت -->
+        <div class="text-center text-light mt-1">
+            <p class="h4">
+                سردار شهید بلوچ نیاز فتوحی
+            </p>
+            <p class="h6">
+                تاریخ شهادت: 24/07/1359
+            </p>
+        </div>
+
+        <div class="row pt-5 pb-5">
+            <!-- عکس شهید -->
+            <div>
+                <img class="roundimg" width="200px" height="300px" src="./assets/bg.png" />
+            </div>
+        </div>
+        <!-- سطر اول -->
+        <div class="row pt-5 pb-5">
+
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="shahid-info.html" target="_blank">اطلاعات فردی</a>
+            </div>
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="shahid-life.html" target="_blank">زندگی نامه</a>
+            </div>
+
+
+        </div>
+        <!-- سطر دوم -->
+        <div class="row pt-5 pb-5">
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="shahid-memory.html" target="_blank">خاطرات</a>
+            </div>
+
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="shahid-products.html" target="_blank">تولیدات</a>
+            </div>
+
+        </div>
+        <!-- سطر سوم -->
+        <div class="row pt-5 pb-5">
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="shahid-clip.html" target="_blank">فیلم</a>
+            </div>
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="shahid-voice.html" target="_blank">صوت</a>
+            </div>
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="shahid-image.html" target="_blank">تصاویر</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="botbar"></div>
+
+
+
+
+
+    <script>
+        $("#topbar").load("navbar.html")
+        $("#botbar").load("footer.html")
+    </script>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

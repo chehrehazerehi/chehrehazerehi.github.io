@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/jquery.min.js"></script>
+
+    <title></title>
+</head>
+
+
+<body>
+
+    <div id="pop-up">
+        <h5 class="mb-5">تصاویر</h5>
+
+        <div class="row  text-center pb-2">
+            <div class="col mb-3">
+                <img src="./assets/izedi/1.jpg" width="500px" height="350px"/>
+            </div>
+            <div class="col mb-3">
+                <img src="./assets/izedi/2.jpg" width="500px" height="350px"/>
+            </div>
+            <div class="col mb-3">
+                <img src="./assets/izedi/3.jpg" width="500px" height="350px"/>
+            </div>
+        </div>
+
+        <hr>
+        <button class="btn btn-primary w-25 mt-3" id="btn-close">بازگشت</button>
+    </div>
+
+
+    <script>
+        $("#btn-close").click(() => {
+            this.close()
+        })
+    </script>
+</body>
+
+</html>

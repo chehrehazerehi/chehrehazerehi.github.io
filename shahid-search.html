@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/jquery.min.js"></script>
+
+    <title>بلاگ جامع دفاع مقدس</title>
+</head>
+
+
+<body>
+    <!-- نوار بالای سایت -->
+    <div id="topbar"></div>
+
+    <!-- جستجوی شهدا -->
+    <div class="container-fluid mt-5 w-50 text-center" dir="rtl">
+        <input class="form-control" placeholder="نام و نام خانوادگی شهید را وارد کنید" />
+        <button id="btn-search" class="btn btn-danger mt-2 w-100" dir="rtl"><img src="./assets/search.svg" width="30px"
+                height="30px" />جستجو</button>
+    </div>
+
+    <!-- نتایج -->
+    <div class="container-fluid w-50 mt-3 mb-3" id="results">
+
+        <div class="search-result rounded">
+            <!-- <div class="text-center">
+                <span>نتایج</span>
+                <img src="./assets/results.svg" width="36px" height="36px" />
+            </div> -->
+
+            <!-- کادر نتایج سرچ -->
+            <div class="row">
+                <div class="col">
+                    <img class="avatar m-3" id="img-avatar" width="100px" height="100px" src="./assets/person.svg" />
+                </div>
+                <div class="col">
+                    <div id="fullname" class="text-end m-2">نام کامل شهید</div>
+                    <div id="fullname" class="text-end m-2">سال شهادت</div>
+                    <div class="text-end">
+                        <button id="result-detail" class="btn btn-success w-50 mt-3 me-1">اطلاعات
+                            کامل <img src="./assets/info.png" width="24px" height="24px" /></button>
+                    </div>
+                </div>
+            </div>
+            <!-- کادر نتایج سرچ  -->
+
+            <!-- نمایش آخرین مطالب اضافه شده -->
+        </div>
+    </div>
+
+
+    <!-- نوار پایین -->
+    <div id="botbar"></div>
+
+
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        $("#topbar").load("navbar.html")
+        $("#botbar").load("footer.html")
+        $("#results").hide()
+
+        $("#btn-search").click(() => {
+            $("#results").show()
+        })
+    </script>
+</body>
+
+</html>

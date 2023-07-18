@@ -1,0 +1,171 @@
+.roundimg {
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.frame-item {
+    border: 3px solid rgb(255, 74, 74);
+    border-radius: 50%;
+    color: rgb(255, 74, 74);
+    text-align: center;
+    padding-top: 6%;
+    background-color: rgb(75, 47, 47);
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    margin-right: 35px;
+    margin-left: 12%;
+    margin-top: 5px;
+}
+
+.frame-item:hover {
+    transition: .5s;
+    background-color: rgb(219, 219, 219);
+    color: black;
+    transform: scale(.9);
+}
+
+
+li:hover {
+    background-color: rgb(182, 216, 181) !important;
+    border-radius: 10px;
+    color: rgb(54, 54, 54) !important;
+    cursor: pointer;
+
+}
+
+li {
+    padding-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bg-light-gray {
+    background-color: rgb(185, 185, 185);
+}
+
+.bg-dark-gray {
+    background-color: rgb(51, 51, 51);
+    color: whitesmoke;
+}
+
+.bg-gray {
+    background-color: rgb(92, 92, 92);
+    color: whitesmoke;
+}
+
+/* #footer-avatar {
+    border: 2px dotted rgb(206, 206, 206);
+} */
+
+#footer {
+    margin-top: 5px;
+}
+
+span {
+    font-weight: bold;
+}
+
+#panel {
+    background-color: rgb(46, 46, 46);
+    color: #f5f5f5;
+    height: 100vh;
+}
+
+#panel-menu {
+    background-color: rgb(71, 71, 71);
+}
+
+#panel-page {
+    background-color: aqua;
+    width: 100%;
+}
+
+#line {
+    width: 100%;
+    height: 1px;
+    background-color: whitesmoke;
+}
+
+#login-box {
+    background-color: rgb(68, 88, 67);
+    border-radius: 15px;
+    width: 500px;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 33%;
+    color: whitesmoke;
+    padding: 30px;
+    text-align: center;
+}
+
+#about-box {
+    display: grid;
+    /* justify-items: center; */
+    direction: rtl;
+    background-color: rgb(63, 63, 63) !important;
+    margin-top: 40vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: whitesmoke;
+    text-align: start;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.contentbox {
+    margin: 20px;
+    border: 3px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.rounded-corner {
+    border-radius: 10px;
+    border: 2px solid rgb(86, 145, 74);
+}
+
+.center-element {
+    margin-left: 50%;
+}
+
+.map-box {
+    width: 650px;
+    height: 750px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.hover:hover {
+    background-color: rgb(99, 129, 101);
+}
+
+#pop-up {
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 20px;
+    direction: rtl;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(53, 53, 53);
+}
+
+.center-top {
+    margin-top: 30vh;
+}
+
+.search-result {
+    background-color: rgb(176, 207, 188);
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 2px solid white;
+}

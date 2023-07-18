@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/fa-icons/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <title>panel</title>
+</head>
+
+<body dir="rtl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3" id="panel">
+                <h4 class="mt-3"><i class="fa fa-wrench"></i> مدیریت</h4>
+                <div id="line"></div>
+                <ul class="navbar-nav mt-4">
+                    <li id="menu-newpost" class="mt-2 pe-2">
+                        <i class="fa fa-add"></i>
+                        مطلب جدید
+                    </li>
+                    <li id="menu-editpost" class="mt-2 pe-2">
+                        <i class="fa fa-edit"></i>
+                        ویرایش محتوا
+                    </li>
+                    <li id="menu-note" class="mt-2 pe-2">
+                        <i class="fa fa-notes-medical"></i>
+                        افزودن دلنوشته
+                    </li>
+                    <li id="menu-editnote" class="mt-2 pe-2">
+                        <i class="fa fa-note-sticky"></i>
+                        ویرایش دلنوشته ها
+                    </li>
+                    <li id="menu-newadmin" class="mt-2 pe-2">
+                        <i class="fa fa-user-plus"></i>
+                        مدیر جدید
+                    </li>
+                    <li id="menu-manage" class="mt-2 pe-2">
+                        <i class="fa fa-users-gear"></i>
+                        مدیریت اعضا
+                    </li>
+                    <li id="menu-logout" class="mt-2 pe-2">
+                        <i class="fa fa-sign-out"></i>
+                        خروج
+                    </li>
+                </ul>
+            </div>
+            <!-- صفحه مطلب جدید -->
+            <div class="col-9 mb-5 me-auto ms-auto bg-light" id="content">
+
+                <!-- مطلب جدید -->
+                <div class="container-fluid w-75 mt-2 float-end contentbox" id="newpost">
+
+                    <div class="text-center w-100 bg-secondary rounded text-warning p-3" id="content-title">
+                        <h4>مطلب جدید</h4>
+                    </div>
+                    <!-- اطلاعات فردی -->
+                    <label class="mb-2 mt-2 form-label">نام کامل شهید</label><input required class="form-control"
+                        type="text" placeholder="نام، نام خانوادگی و شهرت" />
+
+                    <!-- علت شهادت -->
+                    <label class="mb-2 mt-2 form-label">علت شهادت</label><input class="form-control" type="text"
+                        placeholder="شرح علت شهادت" />
+
+                    <!-- تاریخ شهادت -->
+                    <label class="mb-2 mt-2 form-label">تاریخ شهادت</label><input class="form-control  w-25" type="date"
+                        placeholder="تاریخ شهادت" />
+
+                    <!-- وصیت نامه -->
+                    <label class="mb-2 mt-2 form-label">وصیت نامه</label><textarea class="form-control" type="text"
+                        placeholder="متن وصیت نامه را در این قسمت وارد کنید"></textarea>
+
+                    <!-- خاطرات -->
+                    <label class="mb-2 mt-2 form-label">زندگی نامه</label><textarea class="form-control" type="text"
+                        placeholder="زندگی نامه شهید"></textarea>
+
+                    <!-- صوت-->
+                    <label class="mb-2 mt-2 form-label">صدا، صوت</label><input class="form-control w-50" type="file" />
+
+                    <!-- تولیدات -->
+                    <label class="mb-2 mt-2 form-label">تولیدات</label><textarea class="form-control" type="text"
+                        placeholder=""></textarea>
+
+                    <!-- فیلم -->
+                    <label class="mb-2 mt-2 form-label">فیلم</label><input class="form-control w-50" type="file" />
+
+                    <!-- عکس شهید -->
+                    <label class="mb-2 mt-2 form-label">عکس پرسنلی</label><input class="form-control w-50"
+                        type="file" />
+
+                    <!-- تصاویر -->
+                    <label class="mb-2 mt-2 form-label">تصاویر شهید</label><input class="form-control w-50"
+                        type="file" />
+
+                    <!-- دکمه ثبت -->
+                    <button id="btn-submit" class="btn btn-primary w-100 mt-4"><img src="./assets/submit.svg"
+                            width="24px" height="24px" /> ثبت و ذخیره
+                    </button>
+                    <!-- دکمه پاک کردن مقادیر وارد شده -->
+                    <button id="btn-clear" class="btn btn-danger mt-2 w-100"><img src="./assets/delete.svg" width="24px"
+                            height="24px"> پاک کردن ورودی ها
+                    </button>
+                </div>
+                <!-- ویرایش اطلاعات -->
+                <div class="container-fluid" dir="rtl" id="editpost">
+                    <div class="table-responsive">
+                        <table id="tbl1"
+                            class="table table-bordered table-success rounded mt-5 text-end text-center table-striped">
+                            <tr>
+                                <th>#</th>
+                                <th>نام و نام خانوادگی</th>
+                                <th>وضعیت</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>شهید 1</td>
+                                <td>
+                                    <button class="btn btn-info text-black-50">ویرایش</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- دلنوشته جدید -->
+                <div class="container-fluid mt-5 contentbox w-75 p-3" id="addnote">
+                    <textarea class="form-control" placeholder="متن دلنوشته"></textarea>
+                    <label class="form-label">عکس چهره شهید</label><input class="form-control w-50 mt-2" type="file" />
+                    <button class="btn btn-success w-25 mt-2">ثبت</button>
+                </div>
+
+                <!-- تعریف مدیر جدید -->
+                <div class="container-fluid mt-5 contentbox w-75 p-3" id="addadmin">
+                    <h5>مدیر جدید</h5>
+                    <input class="form-control mb-2" type="text" placeholder="نام کاربری" id="new-admin-username" />
+                    <input class="form-control mb-2" type="password" placeholder="رمز عبور" id="new-admin-password" />
+                    <input class="form-control mb-2" type="password" placeholder="تکرار رمز عبور"
+                        id="new-admin-repassword" />
+                    <button class="btn btn-success mb-2 w-50">ثبت</button>
+                </div>
+
+                <div class="container-fluid text-center center-top w-50" id="logout-box">
+                    <h4 class="bg-warning rounded p-2">آیا میخواهید از حساب خود خارج شوید؟</h4>
+                    <button class="btn btn-outline-danger mt-2 w-25" id="btn-logout">بلی</button>
+                    <button class="btn btn-outline-primary  mt-2 w-25" id="btn-dismiss">خیر</button>
+                </div>
+                <!-- <button class="btn btn-primary" onclick="httpReq()">req</button> -->
+
+            </div>
+
+
+            <!-- نمایش اطلاعات شهدا در جدول برای ادیت -->
+            <script>
+
+                // ساخت جدول بر اساس اطلاعات گرفته شده از دیتابیس
+
+                $("#editpost").hide()
+                $("#newpost").hide()
+                $("#addnote").hide()
+                $("#addadmin").hide()
+                $("#logout-box").hide()
+                $("#menu-note").click(() => {
+                    $("#addnote").show()
+                    $("#editpost").hide()
+                    $("#newpost").hide()
+                    $("#addadmin").hide()
+                    $("#logout-box").hide()
+                })
+                $("#menu-newadmin").click(() => {
+                    $("#addadmin").show()
+                    $("#editpost").hide()
+                    $("#newpost").hide()
+                    $("#addnote").hide()
+                    $("#logout-box").hide()
+                })
+                $("#menu-editpost").click(() => {
+                    $("#editpost").show()
+                    $("#newpost").hide()
+                    $("#addnote").hide()
+                    $("#addadmin").hide()
+                    $("#logout-box").hide()
+                })
+                $("#menu-newpost").click(() => {
+                    $("#newpost").show()
+                    $("#editpost").hide()
+                    $("#addnote").hide()
+                    $("#addadmin").hide()
+                    $("#logout-box").hide()
+                })
+                $("#menu-logout").click(() => {
+                    $("#editpost").hide()
+                    $("#newpost").hide()
+                    $("#addnote").hide()
+                    $("#addadmin").hide()
+                    $("#logout-box").show()
+                })
+
+                function httpReq() {
+                    $.post("http://localhost:3000/api/getnews", (data, status) => {
+                        alert("req received")
+                    })
+                }
+
+
+            </script>
+
+</body>
+
+</html>

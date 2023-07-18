@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title></title>
+</head>
+
+<body>
+
+    <!-- نوار بالا -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success" dir="rtl">
+        <div class="container">
+          <a class="navbar-brand" href="#">چهره های زرهی</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">خانه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shahid.html">شهدا</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="freemans.html">آزادگان</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="injured.html">جانبازان</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="retired.html">بازنشسته ها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">خاطرات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">درباره ما</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- سطر و ستون برای نمایش ایتم های اطلاعات بازنشسته -->
+    <div class="container-fluid text-center bg-dark">
+        <!-- عنوان نام اطلاعات بازنشسته -->
+        <div class="text-center text-light mt-1">
+            <p class="h4">
+                مصاحبه با استاد ایزدی
+            </p>
+            <p class="h6">
+
+            </p>
+        </div>
+
+        <div class="row pt-5 pb-5">
+            <!-- عکس  -->
+            <div>
+                <img class="roundimg" width="200px" height="300px" src="./assets/izedi/1.jpg" />
+            </div>
+        </div>
+        <!-- سطر اول -->
+        <div class="row pt-5 pb-5">
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="retired-info.html" target="_blank">اطلاعات فردی</a>
+            </div>
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="retired-life.html" target="_blank">زندگی نامه</a>
+            </div>
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="retired-video.html" target="_blank">فیلم</a>
+            </div>
+        </div>
+        <!-- سطر دوم -->
+        <div class="row pt-5 pb-5">
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="retired-memory.html" target="_blank">خاطرات</a>
+            </div>
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="retired-product.html" target="_blank">تولیدات</a>
+            </div>
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="retired-image.html" target="_blank">تصاویر</a>
+            </div>
+        </div>
+        <!-- سطر سوم -->
+        <div class="row pt-5 pb-5">
+
+            <div class="col-4 frame-item">
+                <a class="nav-link text-light" href="retired-voice.html" target="_blank">صوت</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="footer" class="navbar navbar-nav bg-success text-light" dir="rtl">
+        <div class="container-fluid">
+
+            <div class="row me-3">
+                <div class="mb-3"><i class="fa fa-map-location"></i> آدرس:<span> شیراز، بلوار استقلال، مرکز آموزش
+                        زرهی</span>
+                </div>
+                <div class="mb-3"><i class="fa fa-inbox"></i> ایمیل: <span>example@mail.com</span></div>
+                <div class="mb-3"><i class="fa fa-mobile-retro"></i> موبایل: <span>09123456677</span></div>
+            </div>
+            <img class=" m-3" id="footer-avatar" width="150px" height="150px" src="./assets/logo.png" />
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        $("#topbar").load("navbar.html")
+        $("#botbar").load("footer.html")
+    </script>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
